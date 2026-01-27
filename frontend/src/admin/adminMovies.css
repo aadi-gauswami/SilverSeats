@@ -1,0 +1,105 @@
+.admin-page {
+  padding: 20px;
+  background-color: #000;
+  background-image: url("/public/background.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* HEADER */
+.admin-header {
+  background: rgba(255, 255, 255, 0.589);
+  color: rgb(0, 0, 0);
+  padding: 20px;
+  border-radius: 6px;
+  margin-bottom: 30px;
+}
+
+.admin-header h1 {
+  margin: 0;
+}
+
+.admin-header p {
+  margin: 5px 0 0;
+  font-size: 14px;
+  opacity: 0.8;
+}
+
+/* FORM SECTION */
+.form-section {
+  background: rgba(255, 255, 255, 0.589);
+  color: rgb(0, 0, 0);
+  padding: 20px;
+  border-radius: 6px;
+  margin-bottom: 40px;
+}
+
+.movie-form {
+  display: grid;
+  gap: 10px;
+  max-width: 500px;
+}
+
+.movie-form input,
+.movie-form textarea {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.checkbox {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.btn-group {
+  display: flex;
+  gap: 10px;
+}
+
+/* TABLE SECTION */
+.table-section {
+  background: rgba(255, 255, 255, 0.589);
+  color: rgb(0, 0, 0);
+  padding: 20px;
+  border-radius: 6px;
+}
+
+.movie-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 15px;
+}
+
+.movie-table th,
+.movie-table td {
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: center;
+}
+
+.movie-table img {
+  width: 60px;
+  height: 80px;
+  object-fit: cover;
+}
+
+button {
+  padding: 6px 10px;
+  cursor: pointer;
+  border: none;
+  border-radius: 4px;
+  margin: 0px 10px;
+}
+
+button.danger {
+  background: #d9534f;
+  color: white;
+}
+
+button.cancel {
+  background: gray;
+  color: white;
+}

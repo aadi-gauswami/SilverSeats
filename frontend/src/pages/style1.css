@@ -1,0 +1,171 @@
+/* ================= GLOBAL ================= */
+.main {
+  width: 100%;
+  min-height: 100vh;
+  background-color: #000;
+  background-image: url("/public/background.png");
+  color: #e5e7eb;
+  padding-bottom: 3rem;
+  font-family: "Segoe UI", sans-serif;
+}
+
+/* ================= MOVIE INFO ================= */
+.movie-info {
+  max-width: 1100px;
+  margin: 4rem auto 2rem;
+  padding: 2rem;
+  background: #000000d1;
+  border-radius: 14px;
+  display: flex;
+  gap: 2.5rem;
+  align-items: flex-start;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.7);
+}
+
+.poster {
+  width: 260px;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.8);
+}
+
+.movie-info h1 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+  color: #f8fafc;
+}
+
+.movie-info p {
+  margin: 0.3rem 0;
+  line-height: 1.6;
+  color: #cbd5f5;
+}
+
+.movie-info strong {
+  color: #facc15;
+}
+
+/* ================= SEAT GRID ================= */
+.seat-grid {
+  max-width: 500px;
+  margin: 3rem auto;
+  padding: 1.5rem;
+  background: #000000d1;
+  border-radius: 14px;
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  gap: 12px;
+  justify-items: center;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.6);
+}
+
+.seat {
+  width: 46px;
+  height: 46px;
+  border-radius: 8px;
+  font-size: 13px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  user-select: none;
+  transition: all 0.25s ease;
+}
+
+.seat.white {
+  background: #e5e7eb;
+  color: #020617;
+}
+
+.seat.white:hover {
+  background: #94a3b8;
+  transform: scale(1.05);
+}
+
+.seat.blue {
+  background: #2563eb;
+  color: white;
+  transform: scale(1.08);
+}
+
+.seat.red {
+  background: #dc2626;
+  color: white;
+  cursor: not-allowed;
+  opacity: 0.8;
+}
+
+/* ================= BOOKING FORM ================= */
+.movie-detail-card {
+  max-width: 450px;
+  margin: 3rem auto;
+  padding: 2rem;
+  background: #000000d1;
+  border-radius: 14px;
+  box-shadow: 0 10px 35px rgba(0, 0, 0, 0.7);
+}
+
+.movie-detail-card h3 {
+  text-align: center;
+  margin-bottom: 1.5rem;
+  font-size: 1.4rem;
+  color: #f8fafc;
+}
+
+.movie-detail-card form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.movie-detail-card input,
+.movie-detail-card textarea,
+.movie-detail-card select {
+  padding: 0.7rem 0.8rem;
+  border-radius: 8px;
+  border: none;
+  outline: none;
+  background: #0f172a;
+  color: #e5e7eb;
+  font-size: 14px;
+}
+
+.movie-detail-card input::placeholder,
+.movie-detail-card textarea::placeholder {
+  color: #94a3b8;
+}
+
+.movie-detail-card textarea {
+  resize: none;
+  min-height: 70px;
+}
+
+/* ================= BUTTON ================= */
+.movie-detail-card button {
+  margin-top: 1rem;
+  padding: 0.8rem;
+  font-size: 15px;
+  font-weight: 600;
+  background: linear-gradient(135deg, #2563eb, #1d4ed8);
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.movie-detail-card button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(37, 99, 235, 0.6);
+}
+
+/* ================= RESPONSIVE ================= */
+@media (max-width: 900px) {
+  .movie-info {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .poster {
+    width: 220px;
+  }
+}

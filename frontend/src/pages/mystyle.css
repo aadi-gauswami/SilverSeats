@@ -1,0 +1,47 @@
+.movie-detail-card {
+  max-width: 500px;
+  margin: 2rem auto;
+  background: #1a1a1a;
+  padding: 2rem;
+  border-radius: 10px;
+  color: #fff;
+}
+
+.movie-detail-card h3 {
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.movie-detail-card p {
+  margin: 0.3rem 0;
+}
+
+.movie-detail-card input {
+  margin-top: 0.5rem;
+  padding: 0.5rem;
+  width: 100%;
+  border: none;
+  border-radius: 5px;
+}
+
+.movie-detail-card button {
+  margin-top: 1rem;
+  padding: 0.7rem 1rem;
+  background: #fff;
+  color: #000;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.movie-detail-card h3 {
+  margin-top: 20px;
+}
+
+.movie-detail-card p {
+  margin: 6px 0;
+}
+
+.movie-detail-card strong {
+  color: #ffd200;
+}
